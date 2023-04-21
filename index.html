@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+    
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+	<form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+        
+		<label for="name">Name</label>
+		<div class="name-container">
+			<div>
+				<label for="first-name"></label>
+				<input type="text" id="first-name" name="first-name" placeholder ="First Name" required>
+			</div>
+			<div>
+				<label for="last-name"></label>
+				<input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+			</div>
+		</div>
+
+		<label for="address">Address</label>
+		<div class="address-container">
+			<div>
+				<label for="street"></label>
+				<input type="text" id="street" name="street" placeholder="Street" required>
+			</div>
+			<div>
+				<label for="city"></label>
+				<input type="text" id="city" name="city" placeholder="City" required>
+			</div>
+			<div>
+				<label for="state"></label>
+				<input type="text" id="state" name="state" placeholder="State" required>
+			</div>
+			<div>
+				<label for="pincode"></label>
+				<input type="text" id="pincode" name="pincode" placeholder="PIN CODE" required>
+			</div>
+		</div>
+
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter a 10-digit phone number" required>
+		
+
+
+		<div class="input-name">Quality of Product Recived</div>
+
+        <div id="1" class="radio-inputs">
+            <label class="radio">
+              <input type="radio" name="Quality_of_Product_Recived" value="Excellent" checked="">
+              <span class="name">Excellent</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="Quality_of_Product_Recived" value="Good">
+              <span class="name">Good</span>
+            </label>
+                
+            <label class="radio">
+              <input type="radio" name="Quality_of_Product_Recived" value="Bad">
+              <span class="name">Bad</span>
+            </label>
+          </div>
+          <div class="input-name">Value For Money</div>
+        <div class="radio-inputs">
+            <label class="radio">
+              <input type="radio" name="value_for_money" value="Excellent" checked="">
+              <span class="name">Excellent</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="value_for_money" value="Good">
+              <span class="name">Good</span>
+            </label>
+                
+            <label class="radio">
+              <input type="radio" name="value_for_money" value="Bad">
+              <span class="name">Bad</span>
+            </label>
+          </div>
+
+          <div class="input-name">Delivery</div>
+        <div class="radio-inputs">
+            <label class="radio">
+              <input type="radio" name="delevery" value="Excellent" checked="">
+              <span class="name">Excellent</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="delevery" value="Good">
+              <span class="name">Good</span>
+            </label>
+                
+            <label class="radio">
+              <input type="radio" name="delevery" value="Bad">
+              <span class="name">Bad</span>
+            </label>
+          </div>
+          <br>
+
+                <button class="button" type="submit">SUBMIT</button>
+	</form>
+</body>
+</html>
