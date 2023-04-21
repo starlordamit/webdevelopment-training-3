@@ -1,0 +1,168 @@
+
+body{
+    
+    background-color: #141826;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #141826;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 100px;
+    font-weight: 750;
+    background: linear-gradient(to right, #ffb95a, #b321de,#ffb95a, #44adfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  form {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    max-width:40%;
+    width:100%;
+    background-color:#1e2833;
+    padding:60PX;
+    border-radius:4px;
+    transform:translate(58%, 0.1%);
+    color:#fff;
+    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+  }
+  .form-control {
+    background:none;
+    border:none;
+    border-bottom:1px solid #434a52;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+  }
+  form .btn-primary {
+    background:#214a80;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  button:hover, button:active {
+    background:#214a80;
+    outline:none;
+  }
+  button:active {
+    transform:translateY(1px);
+  }
+  
+
+  .name-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .address-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  
+  div {
+    margin-bottom: 10px;
+  }
+  input {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background:#214a80;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+ 
+ 
+  
+  button {
+    background:#3682e6;
+    color: white;
+    font-style: bold;
+    border:none;
+    border-radius:4px;
+    padding:15px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+  button:hover, button:active {
+    background:#125bb9;
+    outline:none;
+  }
+  
+  button:active {
+    transform:translateY(1px);
+  }
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #3682e6;
+    font-style: bold;
+    color: white;
+    font-weight: 600;
+  }
