@@ -3,20 +3,8 @@ body{
     
     background-color: #141826;
 }
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    background-color: #141826;
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 100px;
-    font-weight: 750;
-    background: linear-gradient(to right, #ffb95a, #b321de,#ffb95a, #44adfb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
+
+  @media(min-device-width:600px){
   form {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -28,6 +16,19 @@ h1 {
     transform:translate(58%, 0.1%);
     color:#fff;
     box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #141826;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 100px;
+    font-weight: 750;
+    background: linear-gradient(to right, #ffb95a, #b321de,#ffb95a, #44adfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .form-control {
     background:none;
@@ -166,3 +167,170 @@ h1 {
     color: white;
     font-weight: 600;
   }
+}
+
+
+
+
+
+
+
+  @media (max-device-width: 600px){
+    body{
+      display:inline-block;
+      background-color: #141826;
+      width: 100%;
+      justify-items: center;
+  }
+
+    form {
+      font-family: "Roboto", sans-serif;
+      justify-content: center;
+      justify-items: center;
+      font-size: 45px;
+      width:100%;
+      background-color:#1e2833;
+      justify-content: center;
+
+      padding:60PX;
+      color:#fff;
+      box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+    }
+
+
+    h1 {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      background-color: #141826;
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 100px;
+      font-weight: lighter;
+      background: linear-gradient(to right, #ffb95a, #b321de,#ffb95a, #44adfb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .form-control {
+      background:none;
+      border:none;
+      border-bottom:1px solid #434a52;
+      border-radius:0;
+      box-shadow:none;
+      outline:none;
+      color:inherit;
+    }
+    form .btn-primary {
+      background:#214a80;
+      border:none;
+      border-radius:4px;
+      padding:11px;
+      box-shadow:none;
+      margin-top:26px;
+      text-shadow:none;
+      outline:none;
+    }
+    button:hover, button:active {
+      background:#214a80;
+      outline:none;
+    }
+    button:active {
+      transform:translateY(1px);
+    }
+    
+  
+    input {
+      display: grid;
+      justify-content: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 35px;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      padding: 3%;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      }
+  
+    input[type="radio"] {
+      size: 50px;
+    }
+    
+    
+    
+   
+   
+    
+    button {
+      width: 100%;
+      background:#3682e6;align-self: center;
+      color: white;
+      font-style: bold;
+      font-size: larger;
+      font-weight: lighter;
+      border:none;
+      border-radius:4px;
+      padding:20px;
+      box-shadow:none;
+      margin-top:26px;
+      text-shadow:none;
+      outline:none;
+    }
+    
+    button:hover, button:active {
+      background:#125bb9;
+      outline:none;
+    }
+    
+    button:active {
+      transform:translateY(1px);
+    }
+  
+  .radio-inputs {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0.5rem;
+      background-color: #EEE;
+      box-sizing: border-box;
+      box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+      padding: 1rem;
+      width: 100%;
+      font-size: 35px;
+      margin-bottom: 8px;
+    }
+    
+    .radio-inputs .radio {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    
+    .radio-inputs .radio input {
+      display: none;
+    }
+    
+    .radio-inputs .radio .name {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      border: none;
+      padding: .5rem 0;
+      color: rgba(51, 65, 85, 1);
+      transition: all .15s ease-in-out;
+    }
+    
+    .radio-inputs .radio input:checked + .name {
+      background: linear-gradient(to right, #ffb95a, #b321de,#ffb95a, #44adfb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: #3682e6;
+      font-style: bold;
+      font-weight: 600;
+    }
+
+    
+  }
+  
